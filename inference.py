@@ -10,4 +10,4 @@ model = YOLO('runs/detect/train/weights/best.pt')
 
 for img in os.listdir('datasets/robot/images'):
     results = model('datasets/robot/images/'+img)
-    break
+
