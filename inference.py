@@ -6,7 +6,7 @@ model = YOLO('yolov8n.pt')
 
 
 # ici on teste juste sur les images utilisées pour l'entrainement, en pratique, vous allez 
-# récupérer le flux vidéo de la caméra et faire la détection sur chaque image avec OpenCV
+# récupérer le flux vidéo de la caméra (avec OpenCV) et faire la détection sur chaque image
 
 for img in os.listdir('datasets/robot/images'):
     results = model('datasets/robot/images/'+img)
