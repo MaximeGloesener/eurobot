@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.pt')
 
 # Train the model using the 'coco128.yaml' dataset for 3 epochs
-results = model.train(data='dataset.yaml', epochs=200)
+results = model.train(data='dataset.yaml', epochs=150)
 
 # Evaluate the model's performance on the validation set
 results = model.val()
