@@ -14,7 +14,7 @@ Pour utiliser facilement et reproduire les résultats:
 2. Lancer le script data.py qui va gérer la création des dossiers pour l'entraînement en respectant la structure nécessaire. 
 3. Si vous voulez entraîner le modèle, lancer le script train.py. Avant de lancer, vérifiez que vous avez choisi les bons paramètres si besoin.
 4. A la fin de l'entraînement, les résultats sont stockés dans le dossier runs/detect/trainX avec X qui est le numéro de l'entraînement. Le meilleur modèle sera dans runs/detect/trainX/weights/best.pt. Lorsqu'on vous allez faire l'inférence, sélectionnez ce modèle. 
-5. Inférez avec le fichier inference.py en choisissant les bons poids pour le modèle.  
+5. Inférer avec le fichier inference.py en choisissant les bons poids pour le modèle.  
 
 
 ## Que font les différents fichiers ? 
