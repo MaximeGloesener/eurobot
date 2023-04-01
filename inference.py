@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import os 
 
-# load le meilleur modèle
+# load le meilleur modèle -> remplacer 'yolov8n.pt' par le nom du modèle
 model = YOLO('yolov8n.pt')
 
 
