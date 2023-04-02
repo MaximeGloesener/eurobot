@@ -9,12 +9,18 @@ Utilisation de ultralytics pour entraîner YOLO: [https://github.com/ultralytics
 Exemple d'utilisation: [https://docs.ultralytics.com/usage/python/](https://docs.ultralytics.com/usage/python/)  
 Custom dataset: [https://docs.ultralytics.com/yolov5/train_custom_data/](https://docs.ultralytics.com/yolov5/train_custom_data/)    
 
-Pour utiliser facilement et reproduire les résultats:
-1. Dézipper le dossier avec les images et labels dans le répertoire de travail.
-2. Lancer le script data.py qui va gérer la création des dossiers pour l'entraînement en respectant la structure nécessaire. 
-3. Si vous voulez entraîner le modèle, lancer le script train.py. Avant de lancer, vérifiez que vous avez choisi les bons paramètres si besoin.
-4. A la fin de l'entraînement, les résultats sont stockés dans le dossier runs/detect/trainX avec X qui est le numéro de l'entraînement. Le meilleur modèle sera dans runs/detect/trainX/weights/best.pt. Lorsqu'on vous allez faire l'inférence, sélectionnez ce modèle. 
-5. Inférer avec le fichier inference.py en choisissant les bons poids pour le modèle.  
+
+Pour utiliser facilement et reproduire les résultats sur colab:
+```python
+!git clone https://github.com/MaximeGloesener/eurobot.git
+!pip install ultralytics
+%cd eurobot/
+!python train.py
+
+
+- Avant de lancer, vérifiez que vous avez choisi les bons paramètres dans le fichier train.py (nombre d'époques etc).
+- A la fin de l'entraînement, les résultats sont stockés dans le dossier runs/detect/trainX avec X qui est le numéro de l'entraînement. Le meilleur modèle sera dans runs/detect/trainX/weights/best.pt. Lorsqu'on vous allez faire l'inférence, sélectionnez ce modèle. 
+- Inférer avec le fichier inference.py en choisissant les bons poids pour le modèle.  
 
 
 ## Que font les différents fichiers ? 
