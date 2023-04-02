@@ -16,7 +16,7 @@ Pour utiliser facilement et reproduire les résultats sur colab:
 !pip install ultralytics
 %cd eurobot/
 !python train.py
-
+```
 
 - Avant de lancer, vérifiez que vous avez choisi les bons paramètres dans le fichier train.py (nombre d'époques etc).
 - A la fin de l'entraînement, les résultats sont stockés dans le dossier runs/detect/trainX avec X qui est le numéro de l'entraînement. Le meilleur modèle sera dans runs/detect/trainX/weights/best.pt. Lorsqu'on vous allez faire l'inférence, sélectionnez ce modèle. 
